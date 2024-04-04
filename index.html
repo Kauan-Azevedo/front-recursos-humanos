@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header-nav">
@@ -12,16 +13,23 @@
         <nav class="header-navlinks">
             <ul>
                 <li class="header-navlinks__item">
-                    <a href="">Funcionarios</a>
+                    <a href="./index.html">Principal</a>
                 </li>
                 <li class="header-navlinks__item">
-                    <a href="">Calculadora</a>
+                    <a href="./pages/listar_funcionarios.html">funcionários</a>
+                </li>
+                <li class="header-navlinks__item">
+                    <a href="./pages/calculadora_salarial.html">Calculo Salário</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="container">
+            <h1>Bem-vindo ao Banco Ditae</h1>
+            <p>Aqui voce poderá acessar nossas principais funcionalidades, sendo ela nossa tabela de funcionarios, juntamente com nosso formulario para adicionar novos funcionarios e nossa calculadora de salario</p>
+        </section>
+        <section class="container">
             <h2>Lista funcionarios</h2>
             <table>
                 <thead>
@@ -40,7 +48,7 @@
                 </tbody>
             </table>
         </section>
-        <section>
+        <section class="container">
             <h2>Adicionar funcionarios</h2>
             <form action="">
                 <label for="nome_completo">
@@ -65,7 +73,7 @@
                 </div>
             </form>
         </section>
-        <section>
+        <section class="container">
             <h2>Calculadora de salário</h2>
             <form action="">
                 <label for="nome_completo">
@@ -91,7 +99,20 @@
             </form>
         </section>
     </main>
-
+    <footer>
+        <h3>Contate-nos</h3>
+        <ul>
+            <li>
+                <span>Endereço: </span> Rua do lorem ipsum
+            </li>
+            <li>
+                <span>Telefone: </span> +55 (xx) xxxxxx-xx
+            </li>
+            <li>
+                <span>Contato: </span> loremipsum@vk.com.br
+            </li>
+        </ul>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
