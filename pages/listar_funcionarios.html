@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header-nav">
-        <img src="./images/logo.png" alt="logo" class="header-nav__logo">
+        <img src="/images/logo.png" alt="logo" class="header-nav__logo">
         <nav class="header-navlinks">
             <ul>
                 <li class="header-navlinks__item">
@@ -26,7 +26,10 @@
     </header>
     <main>
         <section class="container funcionario-table-container">
-            <h2>Lista funcionarios</h2>
+            <div class="funcionario-table__btn-group">
+                <h2>Lista funcionarios</h2>
+                <a href="/pages/adiconar_funcionario.html">Adicionar Funcionário</a>
+            </div>
             <table class="funcionario-table">
                 <thead class="table-header">
                     <tr>
@@ -44,9 +47,286 @@
                 <tbody class="table-body">
                     <tr>
                         <td>1</td>
-                        <td>nome</td>
-                        <td>sim</td>
+                        <td>João Silva</td>
+                        <td>1234567-8</td>
+                        <td>123.456.789-10</td>
+                        <td>15/05/1990</td>
+                        <td>(11) 98765-4321</td>
+                        <td>joao.silva@example.com</td>
+                        <td>Rua das Flores, 123, São Paulo</td>
+                        <td>
+                            <button onclick="alert('Atualizando')">👁️</button>
+                            <button  onclick="alert('Deletando')">🗑️</button>
+                        </td>
+                        <tr>
+                            <td>2</td>
+                            <td>Maria Oliveira</td>
+                            <td>2345678-9</td>
+                            <td>234.567.890-11</td>
+                            <td>20/08/1985</td>
+                            <td>(11) 87654-3210</td>
+                            <td>maria.oliveira@example.com</td>
+                            <td>Rua dos Passarinhos, 456, Rio de Janeiro</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Santos</td>
+                            <td>3456789-0</td>
+                            <td>345.678.901-12</td>
+                            <td>10/12/1978</td>
+                            <td>(11) 76543-2109</td>
+                            <td>carlos.santos@example.com</td>
+                            <td>Avenida das Árvores, 789, Belo Horizonte</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ana Costa</td>
+                            <td>5432167-5</td>
+                            <td>321.987.654-10</td>
+                            <td>1978-09-12</td>
+                            <td>(11) 23456-7890</td>
+                            <td>ana.costa@example.com</td>
+                            <td>Av. da Lua, 987, Florianópolis</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Carlos Pereira</td>
+                            <td>6543218-4</td>
+                            <td>987.321.654-10</td>
+                            <td>1995-07-30</td>
+                            <td>(11) 67890-1234</td>
+                            <td>carlos.pereira@example.com</td>
+                            <td>Rua das Ondas, 654, Porto Alegre</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Amanda Sousa</td>
+                            <td>4321876-3</td>
+                            <td>789.654.321-10</td>
+                            <td>1989-12-05</td>
+                            <td>(11) 34567-8901</td>
+                            <td>amanda.sousa@example.com</td>
+                            <td>Av. das Palmeiras, 123, Belo Horizonte</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Felipe Martins</td>
+                            <td>3218765-2</td>
+                            <td>456.789.123-10</td>
+                            <td>1987-06-18</td>
+                            <td>(11) 45678-9012</td>
+                            <td>felipe.martins@example.com</td>
+                            <td>Rua dos Girassóis, 345, Curitiba</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Laura Lima</td>
+                            <td>8765432-1</td>
+                            <td>234.567.891-10</td>
+                            <td>1993-04-22</td>
+                            <td>(11) 56789-0123</td>
+                            <td>laura.lima@example.com</td>
+                            <td>Av. dos Pássaros, 456, Recife</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Lucas Oliveira</td>
+                            <td>7654321-9</td>
+                            <td>567.891.234-10</td>
+                            <td>1984-08-09</td>
+                            <td>(11) 67890-1234</td>
+                            <td>lucas.oliveira@example.com</td>
+                            <td>Rua das Marés, 789, Fortaleza</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Carolina Silva</td>
+                            <td>6543218-4</td>
+                            <td>678.912.345-10</td>
+                            <td>1991-11-14</td>
+                            <td>(11) 78901-2345</td>
+                            <td>carolina.silva@example.com</td>
+                            <td>Av. das Árvores, 123, Manaus</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Fernando Almeida</td>
+                            <td>5432187-5</td>
+                            <td>789.123.456-10</td>
+                            <td>1980-02-28</td>
+                            <td>(11) 89012-3456</td>
+                            <td>fernando.almeida@example.com</td>
+                            <td>Rua das Pedras, 234, Brasília</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Juliana Santos</td>
+                            <td>4321876-3</td>
+                            <td>891.234.567-10</td>
+                            <td>1997-01-03</td>
+                            <td>(11) 90123-4567</td>
+                            <td>juliana.santos@example.com</td>
+                            <td>Av. das Flores, 345, Goiânia</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Rafaela Souza</td>
+                            <td>3218765-2</td>
+                            <td>912.345.678-10</td>
+                            <td>1986-05-16</td>
+                            <td>(11) 01234-5678</td>
+                            <td>rafaela.souza@example.com</td>
+                            <td>Rua dos Peixes, 456, Vitória</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Gabriel Costa</td>
+                            <td>8765432-1</td>
+                            <td>234.567.891-10</td>
+                            <td>1994-09-29</td>
+                            <td>(11) 12345-6789</td>
+                            <td>gabriel.costa@example.com</td>
+                            <td>Av. dos Lagos, 567, Natal</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Patrícia Fernandes</td>
+                            <td>7654321-9</td>
+                            <td>345.678.912-10</td>
+                            <td>1983-03-12</td>
+                            <td>(11) 23456-7890</td>
+                            <td>patricia.fernandes@example.com</td>
+                            <td>Rua das Montanhas, 678, João Pessoa</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Thiago Oliveira</td>
+                            <td>6543218-4</td>
+                            <td>456.789.123-10</td>
+                            <td>1990-12-07</td>
+                            <td>(11) 34567-8901</td>
+                            <td>thiago.oliveira@example.com</td>
+                            <td>Av. das Praias, 789, Porto Velho</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>André Santos</td>
+                            <td>5432187-5</td>
+                            <td>567.891.234-10</td>
+                            <td>1979-07-21</td>
+                            <td>(11) 45678-9012</td>
+                            <td>andre.santos@example.com</td>
+                            <td>Rua dos Rios, 123, Teresina</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Renata Lima</td>
+                            <td>4321876-3</td>
+                            <td>678.912.345-10</td>
+                            <td>1996-04-05</td>
+                            <td>(11) 56789-0123</td>
+                            <td>renata.lima@example.com</td>
+                            <td>Av. das Águas, 456, Cuiabá</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Bruno Oliveira</td>
+                            <td>3218765-2</td>
+                            <td>789.123.456-10</td>
+                            <td>1988-11-28</td>
+                            <td>(11) 67890-1234</td>
+                            <td>bruno.oliveira@example.com</td>
+                            <td>Rua dos Ventos, 789, Florianópolis</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Isabela Costa</td>
+                            <td>8765432-1</td>
+                            <td>891.234.567-10</td>
+                            <td>1981-08-14</td>
+                            <td>(11) 78901-2345</td>
+                            <td>isabela.costa@example.com</td>
+                            <td>Av. das Estrelas, 123, Fortaleza</td>
+                            <td>
+                                <button onclick="alert('Atualizando')">👁️</button>
+                                <button  onclick="alert('Deletando')">🗑️</button>
+                            </td>
+                        </tr>
+                        
                     </tr>
+                    
                 </tbody>
             </table>
         </section>

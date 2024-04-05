@@ -201,3 +201,17 @@ let funcionarios = [
         endereco: "Av. das Estrelas, 123, Fortaleza"
     }
 ];
+
+
+function valid_form(e) {
+    e.preventDefault();
+    const inputs = document.querySelectorAll("form-input");
+
+    for(let input in inputs) {
+        if(input.value == "" || input.value == undefined ) {
+            alert("Preencha todos os campos!")
+        } else {
+            alert("Funcionario adicionado com sucesso")
+        }
+    }
+}

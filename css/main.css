@@ -65,9 +65,49 @@
 .funcionario-table-container .funcionario-table {
     width: 100%;
     background-color: #f6f6f6;
+    overflow-x: scroll;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    padding: .5rem;
 }
 
+.funcionario-table__btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.funcionario-table__btn-group a {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .5rem .3rem;
+    font-weight: bold;
+}
+
+.funcionario-table__btn-group a:hover {
+    background-color: var(--secondary-color);
+}
+
+.funcionario-table-container .funcionario-table thead {
+    padding: 0 .25rem;
+}
+
+/* ADICIONAR FUNCIONARIO */
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container form label {
+    display: flex;
+    flex-direction: column;
+}
 
 
 @media (max-width: 800px) {
