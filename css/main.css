@@ -97,17 +97,46 @@
 
 /* ADICIONAR FUNCIONARIO */
 
-.container form {
+.container form,
+.container .form {
+    max-width: 456px;
+    margin-top: 1rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border: 1px solid black;
 }
 
-.container form label {
+.container form label,
+.container .form label {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
+
+.container .btn-group button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container .btn-group input[type="reset"] {
+    background-color: tomato;
+    color: white;
+    border: 1px transparent;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* CALCULADORA SALARIAL */
 
 
 @media (max-width: 800px) {

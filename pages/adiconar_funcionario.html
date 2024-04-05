@@ -9,17 +9,17 @@
 </head>
 <body>
     <header class="header-nav">
-        <img src="./images/logo.png" alt="logo" class="header-nav__logo">
+        <img src="/images/logo.png" alt="logo" class="header-nav__logo">
         <nav class="header-navlinks">
             <ul>
                 <li class="header-navlinks__item">
-                    <a href="./index.html">Principal</a>
+                    <a href="/index.html">Principal</a>
                 </li>
                 <li class="header-navlinks__item">
-                    <a href="./pages/listar_funcionarios.html">funcionários</a>
+                    <a href="/pages/listar_funcionarios.html">funcionários</a>
                 </li>
                 <li class="header-navlinks__item">
-                    <a href="./pages/calculadora_salarial.html">Calculo Salário</a>
+                    <a href="/pages/calculadora_salarial.html">Calculo Salário</a>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
                 </label>
                 <label for="cpf">
                     <span>cpf</span>
-                    <input class="form-input" type="text" name="cpf" max="14" required placeholder="(ex: xxx.xxx.xxx-xx)">
+                    <input class="form-input" type="text" name="cpf" maxlength="14" required placeholder="(ex: xxx.xxx.xxx-xx)">
                 </label>
                 <label for="endereço">
                     <span>endereço</span>
@@ -56,9 +56,9 @@
                     <span>email</span>
                     <input class="form-input" type="email" name="email" required placeholder="(ex: lorem@vk.com.br)">
                 </label>
-                <div>
+                <div class="btn-group">
                     <input type="reset"/>
-                    <input class="btn-funcionario" type="submit" onclick="valid_form()"/>
+                    <button class="btn-funcionario">Enviar</button>
                 </div>
             </form>
         </section>
@@ -79,6 +79,6 @@
             </li>
         </ul>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

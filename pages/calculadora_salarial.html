@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/globals.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header-nav">
-        <img src="./images/logo.png" alt="logo" class="header-nav__logo">
+        <img src="/images/logo.png" alt="logo" class="header-nav__logo">
         <nav class="header-navlinks">
             <ul>
                 <li class="header-navlinks__item">
-                    <a href="./index.html">Principal</a>
+                    <a href="/index.html">Principal</a>
                 </li>
                 <li class="header-navlinks__item">
-                    <a href="./pages/listar_funcionarios.html">funcionários</a>
+                    <a href="/pages/listar_funcionarios.html">funcionários</a>
                 </li>
                 <li class="header-navlinks__item">
-                    <a href="./pages/calculadora_salarial.html">Calculo Salário</a>
+                    <a href="/pages/calculadora_salarial.html">Calculo Salário</a>
                 </li>
             </ul>
         </nav>
@@ -27,28 +27,34 @@
     <main>
         <section class="container">
             <h2>Calculadora de salário</h2>
-            <form action="">
-                <label for="nome_completo">
-                    <span>Nome:</span>
-                    <input type="text" name="nome_completo" required>
+            <div class="form">
+                <label for="nome">
+                    <span>nome</span>
+                    <input class="salario-form-input" type="text" name="nome" required>
                 </label>
-                <label for="rg">
-                    <span>Nome:</span>
-                    <input type="text" name="rg" required>
+                <label for="valor_hora">
+                    <span>valor hora</span>
+                    <input class="salario-form-input" type="number" name="valor_hora" required>
                 </label>
-                <label for="cpf">
-                    <span>Nome:</span>
-                    <input type="text" name="cpf" required>
+                <label for="horas_trab">
+                    <span>horas trabalhadas</span>
+                    <input class="salario-form-input" type="number" name="horas_trab" required>
                 </label>
-                <label for="endereço">
-                    <span>Nome:</span>
-                    <input type="text" name="endereço" required>
-                </label>
-                <div>
-                    <input type="reset"/>
-                    <input type="submit"/>
+
+                <div class="btn-group">
+                    <button class="calcular-button">Calcular</button>
+                    <button class="salario-clear" type="reset">Limpar</button>
                 </div>
-            </form>
+
+                <label for="salario bru">
+                    <span>salario bruto</span>
+                    <input class="resultado-bruto" type="text" name="salario bru" readonly>
+                </label>
+                <label for="salario liq">
+                    <span>salario liquido</span>
+                    <input class="resultado-liquido" type="text" name="salario liq" readonly>
+                </label>
+            </div>
         </section>
     </main>
     <footer class="footer-section">
@@ -67,6 +73,6 @@
             </li>
         </ul>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
